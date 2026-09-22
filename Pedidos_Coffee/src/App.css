@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3e8dc;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #5c3824;
+}
+
+.section {
+  margin-bottom: 25px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fafafa;
+}
+
+.section h2 {
+  margin-top: 0;
+  color: #6b4226;
+  border-bottom: 2px solid #d8b08c;
+  padding-bottom: 10px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #8b5e3c;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6b4226;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+
+.secondary {
+  background-color: #8b5e3c;
+}
+
+.danger {
+  background-color: #a94442;
+}
+
+.confirmation {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #e8f5e9;
+  border: 1px solid #a5d6a7;
+}
+
+.confirmation h3 {
+  margin-top: 0;
+}
+
+.descuento {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #fff3cd;
+  border: 1px solid #ffe69c;
+}
+
+.regular {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #e2e3e5;
+  border: 1px solid #c6c8ca;
+}
+
+.summary {
+  background-color: #fffaf5;
+}
+
+.total {
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f0dfcf;
+  color: #5c3824;
+  font-size: 22px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
